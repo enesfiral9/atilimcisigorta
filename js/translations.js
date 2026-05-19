@@ -16,7 +16,7 @@ const translations = {
 
     // Section Titles
     sec_about_sub: "Hakkımızda",
-    sec_about_title: "Güvenç Sigorta Kimdir?",
+    sec_about_title: "Atılımcı Sigorta Kimdir?",
     sec_about_desc1: "Yılların verdiği tecrübe ve müşteri odaklı yaklaşımımızla, her türlü sigorta ihtiyacınızda yanınızdayız.",
     sec_about_desc2: "Amacımız sadece bir poliçe satmak değil, zor anlarınızda güvenebileceğiniz bir dost olmaktır. Şeffaflık, güven ve hız en büyük değerlerimizdir.",
     feature_1: "7/24 Destek",
@@ -54,10 +54,10 @@ const translations = {
     footer_menu_title: "Hızlı Menü",
     footer_contact_title: "Bize Ulaşın",
     footer_map_title: "Konumumuz",
-    footer_copyright: "Güvenç Sigorta Acentesi. Tüm Hakları Saklıdır.",
+    footer_copyright: "Atılımcı Sigorta Acentesi. Tüm Hakları Saklıdır.",
 
     // Welcome Modal
-    modal_title: "Güvenç Sigorta'ya<br>Hoş Geldiniz!",
+    modal_title: "Atılımcı Sigorta'ya<br>Hoş Geldiniz!",
     modal_desc: "Geleceğinizi ve sevdiklerinizi güvence altına almak için doğru yerdesiniz. İhtiyacınıza en uygun poliçeyi saniyeler içinde öğrenmek ister misiniz?",
     modal_btn_offer: "Hızlı Teklif Al",
     modal_btn_continue: "İncelemeye Devam Et",
@@ -128,7 +128,7 @@ const translations = {
     hero_btn_2: "Review Our Services",
 
     sec_about_sub: "About Us",
-    sec_about_title: "Who is Guvenc Insurance?",
+    sec_about_title: "Who is Atilimci Insurance?",
     sec_about_desc1: "With years of experience and a customer-oriented approach, we stand by you for all your insurance needs.",
     sec_about_desc2: "Our goal is not just to sell a policy, but to be a trusted friend in difficult times. Transparency, trust, and speed are our greatest values.",
     feature_1: "24/7 Support",
@@ -163,9 +163,9 @@ const translations = {
     footer_menu_title: "Quick Menu",
     footer_contact_title: "Contact Us",
     footer_map_title: "Our Location",
-    footer_copyright: "Guvenc Insurance Agency. All Rights Reserved.",
+    footer_copyright: "Atilimci Insurance Agency. All Rights Reserved.",
 
-    modal_title: "Welcome to<br>Guvenc Insurance!",
+    modal_title: "Welcome to<br>Atilimci Insurance!",
     modal_desc: "You are in the right place to secure your future and your loved ones. Would you like to learn the most suitable policy for your needs in seconds?",
     modal_btn_offer: "Get Quick Quote",
     modal_btn_continue: "Continue Browsing",

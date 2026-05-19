@@ -6,7 +6,7 @@ class Footer extends HTMLElement {
           <div class="row gy-4">
             <div class="col-lg-4 col-md-6">
               <h5 class="mb-4 d-flex align-items-center text-white">
-                <i class="bi bi-shield-check fs-3 me-2 text-primary"></i> Güvenç Sigorta
+                <i class="bi bi-shield-check fs-3 me-2 text-primary"></i> Atılımcı Sigorta
               </h5>
               <p class="text-white-50" data-i18n="footer_about">Güvenilir ve köklü geçmişimizle size ve sevdiklerinize en uygun sigorta çözümlerini sunuyoruz. Geleceğinizi güvence altına alın.</p>
               <div class="mt-4">
@@ -56,7 +56,7 @@ class Footer extends HTMLElement {
           </div>
           
           <div class="footer-bottom">
-            <p class="mb-0 text-white-50">&copy; ${new Date().getFullYear()} <span data-i18n="footer_copyright">Güvenç Sigorta Acentesi. Tüm Hakları Saklıdır.</span></p>
+            <p class="mb-0 text-white-50">&copy; ${new Date().getFullYear()} <span data-i18n="footer_copyright">Atılımcı Sigorta Acentesi. Tüm Hakları Saklıdır.</span></p>
           </div>
         </div>
       </footer>
