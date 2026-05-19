@@ -1,0 +1,61 @@
+/* Navbar overrides */
+.navbar-brand { 
+  font-weight: 800; 
+  color: var(--primary-color) !important; 
+  font-size: 1.5rem; 
+  letter-spacing: -0.5px;
+}
+
+/* Base Nav Link Styles */
+.nav-link { 
+  font-weight: 600; 
+  color: #555 !important; 
+  position: relative;
+  padding: 0.5rem 0.25rem !important;
+  margin: 0 0.8rem;
+  transition: color 0.3s ease;
+  font-size: 1.05rem;
+}
+
+/* Hover and Active State Color */
+.nav-link:hover, .nav-link.active { 
+  color: var(--primary-color) !important; 
+}
+
+/* Stylish Animated Underline */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: var(--cta-color);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.nav-link:hover::after, .nav-link.active::after {
+  width: 100%;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 992px) {
+  .navbar-collapse { 
+    background: #fff; 
+    padding: 20px; 
+    border-radius: 12px; 
+    box-shadow: 0 10px 40px rgba(0,0,0,0.15); 
+    margin-top: 15px; 
+  }
+  .nav-link {
+    margin: 8px 0;
+    padding-left: 0 !important;
+    display: inline-block;
+  }
+  .nav-link::after {
+    left: 0;
+    transform: translateX(0);
+  }
+}

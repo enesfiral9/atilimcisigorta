@@ -1,0 +1,272 @@
+:root {
+  --primary-color: #0b3d91; /* Corporate Navy */
+  --primary-dark: #062b6b;
+  --cta-color: #ff6b00; /* Vibrant Orange for CTA */
+  --cta-hover: #e55e00;
+  --bg-light: #f8f9fa;
+  --text-dark: #333333;
+  --text-muted: #6c757d;
+}
+
+body {
+  font-family: 'Inter', 'Roboto', sans-serif;
+  color: var(--text-dark);
+  background-color: var(--bg-light);
+  padding-top: 76px; /* Offset for fixed navbar */
+  overflow-x: hidden;
+  width: 100%;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+/* Custom Utilities */
+.text-primary-custom { color: var(--primary-color) !important; }
+.bg-primary-custom { background-color: var(--primary-color) !important; }
+.btn-cta {
+  background-color: var(--cta-color);
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.btn-cta:hover {
+  background-color: var(--cta-hover);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(255, 107, 0, 0.3);
+}
+
+/* Minimal View All Link */
+.view-all-link {
+  font-size: 1.1rem;
+  transition: opacity 0.3s ease;
+}
+.view-all-link i {
+  transition: transform 0.3s ease;
+}
+.view-all-link:hover {
+  opacity: 0.8;
+}
+.view-all-link:hover i {
+  transform: translateX(5px);
+}
+
+/* Pulsing / Blinking Animation for CTA */
+@keyframes pulse-glow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.5);
+    transform: scale(1.03);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    transform: scale(1);
+  }
+}
+
+.btn-pulse {
+  animation: pulse-glow 2s infinite;
+}
+
+/* Shatter Close Animation */
+@keyframes shatterOut {
+  0% { 
+    opacity: 1; 
+    transform: scale(1) rotate(0) skew(0); 
+    filter: blur(0); 
+  }
+  20% { 
+    transform: scale(1.05) rotate(2deg) skew(2deg); /* Anticipation / cracking */
+  }
+  50% { 
+    opacity: 0.8; 
+    transform: scale(0.8) rotate(-10deg) skew(-15deg) translateY(50px); 
+    filter: blur(2px); 
+  } 
+  100% { 
+    opacity: 0; 
+    transform: scale(0) rotate(45deg) skew(30deg) translateY(200px); 
+    filter: blur(10px); 
+  }
+}
+
+.shatter-animation {
+  animation: shatterOut 1.2s ease-in forwards !important;
+  transform-origin: center center;
+}
+
+/* Scroll to Top Button */
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.scroll-to-top.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.scroll-to-top:hover {
+  background-color: var(--cta-color) !important;
+  color: #fff;
+  transform: translateY(-5px);
+}
+
+/* WhatsApp Floating Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  z-index: 999;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(37, 211, 102, 0.4);
+}
+.whatsapp-float:hover {
+  background-color: #128c7e;
+  color: #fff;
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 6px 15px rgba(37, 211, 102, 0.6);
+}
+
+/* Blog Card Hover Effect */
+.blog-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.blog-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+}
+
+/* Custom Accordion Styles */
+.accordion-item {
+  border: none;
+  border-radius: 12px !important;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+  overflow: hidden;
+}
+.accordion-button {
+  font-weight: 600;
+  color: var(--text-dark);
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: none !important;
+}
+.accordion-button:not(.collapsed) {
+  background-color: rgba(11, 61, 145, 0.05);
+  color: var(--primary-color);
+}
+.accordion-button::after {
+  transition: transform 0.3s ease;
+}
+.accordion-body {
+  color: var(--text-muted);
+  padding: 0 20px 20px 20px;
+  background-color: #fff;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-color) 100%);
+  color: white;
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+.hero-section::after {
+  content: '';
+  position: absolute;
+  top: -50%; left: -50%; width: 200%; height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.05) 10%, transparent 10%);
+  background-size: 20px 20px;
+  opacity: 0.5;
+  pointer-events: none;
+}
+.hero-title { font-size: 3rem; font-weight: 800; margin-bottom: 20px; line-height: 1.2; }
+.hero-subtitle { font-size: 1.2rem; font-weight: 300; margin-bottom: 30px; opacity: 0.9; }
+
+
+
+
+/* Global Responsive Image Fix */
+img, video, canvas, svg { 
+  max-width: 100%; 
+}
+
+/* Comprehensive Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+  /* Typography Scaling */
+  h1, .h1 { font-size: 1.8rem !important; }
+  h2, .h2 { font-size: 1.5rem !important; }
+  h3, .h3 { font-size: 1.3rem !important; }
+  
+  /* Hero Section */
+  .hero-title { font-size: 1.8rem; }
+  .hero-subtitle { font-size: 1rem; margin-bottom: 20px; }
+  .hero-section { padding: 40px 15px; text-align: center; }
+
+  /* Global Spacing */
+  section { padding: 40px 0 !important; }
+  .container { padding-left: 15px; padding-right: 15px; }
+  
+  /* Floating Elements (WhatsApp & Scroll Top) - Reduce size */
+  .whatsapp-float {
+    width: 45px !important;
+    height: 45px !important;
+    font-size: 1.4rem !important;
+    bottom: 15px !important;
+    left: 15px !important;
+  }
+  .scroll-to-top {
+    width: 45px !important;
+    height: 45px !important;
+    font-size: 1.2rem !important;
+    bottom: 15px !important;
+    right: 15px !important;
+  }
+
+  /* Card Image Heights */
+  .card-img-top { height: 180px !important; }
+  
+  /* Buttons - Touch target size */
+  .btn-lg, .btn-cta { 
+    padding: 10px 20px !important; 
+    font-size: 1rem !important; 
+  }
+
+  /* Welcome Modal Mobile Adjustments */
+  #welcomeModal .modal-body { padding: 1.5rem !important; }
+  #welcomeModal .rounded-circle { width: 60px !important; height: 60px !important; margin-bottom: 1rem !important; }
+  #welcomeModal .bi-shield-check { font-size: 1.8rem !important; }
+  #welcomeModal h3 { font-size: 1.3rem !important; }
+  #welcomeModal p { font-size: 0.9rem !important; margin-bottom: 1rem !important; }
+  #welcomeModal .btn { padding: 8px 16px !important; font-size: 0.9rem !important; }
+}

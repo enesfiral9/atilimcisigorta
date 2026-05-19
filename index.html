@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Güvenç Sigorta | Geleceğinizi Güvence Altına Alın</title>
+  <meta name="description"
+    content="Kasko, trafik, sağlık ve konut sigortası poliçeleriniz için en uygun teklifleri Güvenç Sigorta'dan alın.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap Icons (CDN needed for icons, or local SVG. Will use CDN for icons only) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Local Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css?v=6">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css?v=6">
+</head>
+
+<body>
+  <div id="top"></div>
+
+  <!-- Navbar Component -->
+  <app-navbar></app-navbar>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-lg-6 text-center text-lg-start mb-5 mb-lg-0">
+          <h1 class="hero-title" data-i18n="hero_title">Geleceğinizi Güvence Altına Alın</h1>
+          <p class="hero-subtitle" data-i18n="hero_desc">Hayatın beklenmedik sürprizlerine karşı hazırlıklı olun. Sizin ve sevdikleriniz için en uygun sigorta çözümlerini sunuyoruz.</p>
+          <a href="#teklif-al"
+            class="btn btn-light btn-lg px-4 py-3 rounded-pill fw-bold text-primary-custom me-md-3 mb-3 w-100 d-md-inline-block btn-pulse"
+            style="max-width: 300px;" data-i18n="hero_btn">
+            Hemen Teklif Al
+          </a>
+          <a href="#sigortalarimiz"
+            class="btn btn-outline-light btn-lg px-4 py-3 rounded-pill fw-bold w-100 d-md-inline-block"
+            style="max-width: 300px;" data-i18n="hero_btn_2">
+            Hizmetlerimizi İnceleyin
+          </a>
+        </div>
+        <div class="col-lg-5 offset-lg-1 d-none d-lg-block">
+          <img src="assets/img/hero.png" alt="Güvenç Sigorta Acentesi"
+            class="img-fluid rounded-4 shadow-lg border border-light border-opacity-25"
+            style="object-fit: cover; height: 400px; width: 100%;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="py-5" id="kurumsal">
+    <div class="container my-5">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <div class="pe-lg-5 text-center text-lg-start">
+            <img src="assets/img/about.png" alt="Hakkımızda" class="img-fluid rounded-4 shadow"
+              style="object-fit: cover; height: 350px; width: 100%;">
+          </div>
+        </div>
+        <div class="col-lg-6 text-center text-lg-start">
+          <h6 class="text-primary-custom fw-bold text-uppercase mb-2" data-i18n="sec_about_sub">Hakkımızda</h6>
+          <h2 class="fw-bold mb-4" data-i18n="sec_about_title">Güvenç Sigorta Kimdir?</h2>
+          <p class="text-muted mb-4" data-i18n="sec_about_desc1">Yılların verdiği tecrübe ve müşteri odaklı yaklaşımımızla, her türlü sigorta ihtiyacınızda yanınızdayız.</p>
+          <p class="text-muted mb-4" data-i18n="sec_about_desc2">Amacımız sadece bir poliçe satmak değil, zor anlarınızda güvenebileceğiniz bir dost olmaktır. Şeffaflık, güven ve hız en büyük değerlerimizdir.</p>
+          <div class="row g-4 mt-2">
+            <div class="col-sm-6">
+              <div class="d-flex justify-content-center justify-content-lg-start">
+                <div class="d-flex align-items-center text-start" style="width: 220px;">
+                  <i class="bi bi-check-circle-fill text-success fs-3 me-3 flex-shrink-0"></i>
+                  <h6 class="mb-0 fw-bold" data-i18n="feature_1">7/24 Destek</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex justify-content-center justify-content-lg-start">
+                <div class="d-flex align-items-center text-start" style="width: 220px;">
+                  <i class="bi bi-check-circle-fill text-success fs-3 me-3 flex-shrink-0"></i>
+                  <h6 class="mb-0 fw-bold" data-i18n="feature_2">Uygun Fiyatlar</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex justify-content-center justify-content-lg-start">
+                <div class="d-flex align-items-center text-start" style="width: 220px;">
+                  <i class="bi bi-check-circle-fill text-success fs-3 me-3 flex-shrink-0"></i>
+                  <h6 class="mb-0 fw-bold" data-i18n="feature_3">Hızlı Hasar Ödemesi</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex justify-content-center justify-content-lg-start">
+                <div class="d-flex align-items-center text-start" style="width: 220px;">
+                  <i class="bi bi-check-circle-fill text-success fs-3 me-3 flex-shrink-0"></i>
+                  <h6 class="mb-0 fw-bold" data-i18n="feature_4">Uzman Kadro</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services / Insurances Section -->
+  <section class="py-5 bg-light" id="sigortalarimiz">
+    <div class="container my-5">
+      <div class="text-center mb-5">
+        <h6 class="text-primary-custom fw-bold text-uppercase mb-2" data-i18n="sec_services_sub">Hizmetlerimiz</h6>
+        <h2 class="fw-bold" data-i18n="sec_services_title">Size Özel Sigorta Çözümleri</h2>
+        <p class="text-muted mx-auto" style="max-width: 600px;" data-i18n="sec_services_desc">İhtiyacınıza en uygun poliçeyi bulmak için geniş ürün yelpazemizi inceleyin.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <insurance-card title="Kasko Sigortası"
+            desc="Aracınızı çarpışma, çalınma, yangın ve diğer risklere karşı geniş kapsamlı güvence altına alın."
+            icon="car-front-fill" img="assets/img/kasko.png"
+            i18n-title="srv_kasko_title" i18n-desc="srv_kasko_desc">
+          </insurance-card>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <insurance-card title="Trafik Sigortası"
+            desc="Zorunlu trafik sigortanızı hemen yaptırın, trafikteki risklere karşı 3. şahıslara verebileceğiniz zararları güvence altına alın."
+            icon="stoplights" img="assets/img/trafik.png"
+            i18n-title="srv_trafik_title" i18n-desc="srv_trafik_desc">
+          </insurance-card>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <insurance-card title="Tamamlayıcı Sağlık"
+            desc="Özel hastanelerde SGK fark ücreti ödemeden sağlık hizmetlerinden yararlanmanın ayrıcalığını yaşayın."
+            icon="heart-pulse-fill" img="assets/img/saglik.png"
+            i18n-title="srv_saglik_title" i18n-desc="srv_saglik_desc">
+          </insurance-card>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <insurance-card title="DASK (Zorunlu Deprem)"
+            desc="Evinizi deprem ve deprem kaynaklı hasarlara karşı zorunlu deprem sigortası ile koruma altına alın."
+            icon="house-check-fill" img="assets/img/dask.png"
+            i18n-title="srv_dask_title" i18n-desc="srv_dask_desc">
+          </insurance-card>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <insurance-card title="Konut Sigortası"
+            desc="Evinizi ve eşyalarınızı hırsızlık, yangın, su baskını gibi pek çok riske karşı kapsamlı olarak koruyun."
+            icon="house-door-fill" img="assets/img/konut.png"
+            i18n-title="srv_konut_title" i18n-desc="srv_konut_desc">
+          </insurance-card>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <insurance-card title="İşyeri Sigortası"
+            desc="İşletmenizi beklenmedik tehlikelere karşı güvence altına alarak ticari faaliyetlerinize kesintisiz devam edin."
+            icon="shop" img="assets/img/isyeri.png"
+            i18n-title="srv_isyeri_title" i18n-desc="srv_isyeri_desc">
+          </insurance-card>
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <a href="hizmetler.html" class="text-primary-custom fw-bold text-decoration-none d-inline-flex align-items-center view-all-link">
+          <span data-i18n="btn_view_all_services">Tüm Sigorta Çözümlerini Gör</span> <i class="bi bi-arrow-right ms-2"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section class="py-5 bg-white" id="blog">
+    <div class="container my-5">
+      <div class="text-center mb-5">
+        <h6 class="text-primary-custom fw-bold text-uppercase mb-2" data-i18n="sec_blog_sub">Güncel Bilgiler</h6>
+        <h2 class="fw-bold" data-i18n="sec_blog_title">Blog ve Haberler</h2>
+        <p class="text-muted mx-auto" style="max-width: 600px;" data-i18n="sec_blog_desc">Sigorta dünyasındaki son gelişmeleri, ipuçlarını ve hayatınızı kolaylaştıracak bilgileri keşfedin.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Blog Card 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden blog-card">
+            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=600&h=400" class="card-img-top" alt="Kasko Seçerken" style="height: 220px; object-fit: cover;">
+            <div class="card-body p-4">
+              <span class="badge bg-primary-custom text-white mb-2 px-3 py-2 rounded-pill" data-i18n="badge_arac">Araç Sigortası</span>
+              <h5 class="card-title fw-bold mt-2" data-i18n="blog_1_title">Kasko Seçerken Dikkat Edilmesi Gereken 5 Önemli Detay</h5>
+              <p class="card-text text-muted" data-i18n="blog_1_desc">Doğru kasko poliçesini seçmek aracınızı güvence altına almanın ilk adımıdır. Nelere dikkat etmelisiniz?</p>
+            </div>
+            <div class="card-footer bg-white border-0 px-4 pb-4 pt-0">
+              <a href="#" class="text-primary-custom fw-bold text-decoration-none d-flex align-items-center"><span data-i18n="btn_read_more">Devamını Oku</span> <i class="bi bi-arrow-right ms-2"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Blog Card 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden blog-card">
+            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=600&h=400" class="card-img-top" alt="DASK ve Konut" style="height: 220px; object-fit: cover;">
+            <div class="card-body p-4">
+              <span class="badge bg-primary-custom text-white mb-2 px-3 py-2 rounded-pill" data-i18n="badge_konut">Konut Sigortası</span>
+              <h5 class="card-title fw-bold mt-2" data-i18n="blog_2_title">DASK ve Konut Sigortası Arasındaki Fark Nedir?</h5>
+              <p class="card-text text-muted" data-i18n="blog_2_desc">Sadece zorunlu deprem sigortası yaptırmak yeterli mi, yoksa konut sigortasına da ihtiyacınız var mı?</p>
+            </div>
+            <div class="card-footer bg-white border-0 px-4 pb-4 pt-0">
+              <a href="#" class="text-primary-custom fw-bold text-decoration-none d-flex align-items-center"><span data-i18n="btn_read_more">Devamını Oku</span> <i class="bi bi-arrow-right ms-2"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog Card 3 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden blog-card">
+            <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&q=80&w=600&h=400" class="card-img-top" alt="Tamamlayıcı Sağlık" style="height: 220px; object-fit: cover;">
+            <div class="card-body p-4">
+              <span class="badge bg-primary-custom text-white mb-2 px-3 py-2 rounded-pill" data-i18n="badge_saglik">Sağlık Sigortası</span>
+              <h5 class="card-title fw-bold mt-2" data-i18n="blog_3_title">Tamamlayıcı Sağlık Sigortasının Bilinmeyen Avantajları</h5>
+              <p class="card-text text-muted" data-i18n="blog_3_desc">Özel hastanelerde fark ödemeden tedavi olmanın ötesinde sağlık sigortasının sunduğu fırsatlar.</p>
+            </div>
+            <div class="card-footer bg-white border-0 px-4 pb-4 pt-0">
+              <a href="#" class="text-primary-custom fw-bold text-decoration-none d-flex align-items-center"><span data-i18n="btn_read_more">Devamını Oku</span> <i class="bi bi-arrow-right ms-2"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <a href="blog.html" class="text-primary-custom fw-bold text-decoration-none d-inline-flex align-items-center view-all-link">
+          <span data-i18n="btn_view_all_blog">Tüm Blog Yazılarını Gör</span> <i class="bi bi-arrow-right ms-2"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-5 bg-light" id="sss">
+    <div class="container my-5">
+      <div class="text-center mb-5">
+        <h6 class="text-primary-custom fw-bold text-uppercase mb-2" data-i18n="sec_faq_sub">Aklınızda Soru Kalmasın</h6>
+        <h2 class="fw-bold" data-i18n="sec_faq_title">Sıkça Sorulan Sorular</h2>
+        <p class="text-muted mx-auto" style="max-width: 600px;" data-i18n="sec_faq_desc">Sigorta süreçleri hakkında en çok merak edilen konuları sizin için yanıtladık.</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="accordion" id="faqAccordion">
+            <!-- FAQ 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" data-i18n="faq_1_q">
+                  Kasko ve Trafik Sigortası arasındaki fark nedir?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                <div class="accordion-body" data-i18n="faq_1_a">
+                  Trafik sigortası yasal olarak zorunludur ve olası bir kazada sadece <strong>karşı tarafa ve üçüncü şahıslara</strong> verdiğiniz zararları karşılar. Kasko ise isteğe bağlıdır ve kaza, çalınma, yangın gibi durumlarda <strong>kendi aracınızın</strong> hasarlarını güvence altına alır.
+                </div>
+              </div>
+            </div>
+            
+            <!-- FAQ 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" data-i18n="faq_2_q">
+                  Hasar anında ilk olarak ne yapmalıyım?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                <div class="accordion-body" data-i18n="faq_2_a">
+                  Bir hasar durumunda öncelikle güvenliğinizi sağlayın. Ardından mutlaka kaza tespit tutanağı tutun (veya polis/jandarma raporu alın) ve olay yerinin fotoğraflarını çekin. Hiç vakit kaybetmeden 7/24 hizmet veren hasar ihbar hattımızı veya acentemizi arayarak durumu bildirin.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" data-i18n="faq_3_q">
+                  Tamamlayıcı Sağlık Sigortası (TSS) neleri kapsar?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                <div class="accordion-body" data-i18n="faq_3_a">
+                  Tamamlayıcı Sağlık Sigortası, SGK ile anlaşmalı özel hastanelerde göreceğiniz yatarak veya ayakta tedavi masraflarının SGK tarafından karşılanmayan fark ücretlerini sizin yerinize öder. Böylece ek bir ücret ödemeden kaliteli sağlık hizmeti alırsınız.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" data-i18n="faq_4_q">
+                  Poliçemi iptal edersem paramı iade alabilir miyim?
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                <div class="accordion-body" data-i18n="faq_4_a">
+                  Evet, sigorta poliçenizi iptal etmeniz durumunda, poliçenin kullanılmış olan gün sayısı hesaplanarak kalan günlerin prim tutarı sigorta şirketi tarafından hesabınıza iade edilir. İptal süreci sigorta türüne göre küçük farklılıklar gösterebilir.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Offer Form Section -->
+  <section class="py-5" id="teklif-al">
+    <div class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <!-- Offer Form Component -->
+          <offer-form></offer-form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Component -->
+  <div id="iletisim">
+    <app-footer></app-footer>
+  </div>
+
+  <!-- Welcome Modal -->
+  <div class="modal fade" id="welcomeModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+        <div class="modal-header border-0 pb-0 position-relative">
+          <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close" style="z-index: 2;"></button>
+        </div>
+        <div class="modal-body p-4 p-md-5 text-center pt-0">
+          <div class="bg-light text-primary-custom mx-auto mb-4 d-flex align-items-center justify-content-center rounded-circle" style="width: 80px; height: 80px;">
+            <i class="bi bi-shield-check" style="font-size: 2.5rem;"></i>
+          </div>
+          <h3 class="fw-bold mb-3 text-primary-custom">Güvenç Sigorta'ya<br>Hoş Geldiniz!</h3>
+          <p class="text-muted mb-4">Geleceğinizi ve sevdiklerinizi güvence altına almak için doğru yerdesiniz. İhtiyacınıza en uygun poliçeyi saniyeler içinde öğrenmek ister misiniz?</p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button type="button" class="btn btn-cta rounded-pill px-4 py-2" data-bs-dismiss="modal" onclick="document.getElementById('teklif-al').scrollIntoView({behavior: 'smooth'})">Hızlı Teklif Al</button>
+            <button type="button" class="btn btn-outline-secondary rounded-pill px-4 py-2" data-bs-dismiss="modal">İncelemeye Devam Et</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Local jQuery and Bootstrap JS -->
+  <script src="js/jquery.min.js?v=6"></script>
+  <script src="js/bootstrap.bundle.min.js?v=6"></script>
+
+  <!-- Web Components CSS -->
+  <link rel="stylesheet" href="js/components/Navbar/Navbar.css?v=6">
+  <link rel="stylesheet" href="js/components/InsuranceCard/InsuranceCard.css?v=6">
+  <link rel="stylesheet" href="js/components/OfferForm/OfferForm.css?v=6">
+  <link rel="stylesheet" href="js/components/Footer/Footer.css?v=6">
+
+  <!-- Web Components JS-->
+  <script src="js/components/Navbar/Navbar.js?v=6"></script>
+  <script src="js/components/InsuranceCard/InsuranceCard.js?v=6"></script>
+  <script src="js/components/OfferForm/OfferForm.js?v=6"></script>
+  <script src="js/components/Footer/Footer.js?v=6"></script>
+
+  <!-- Translations -->
+  <script src="js/translations.js?v=1"></script>
+  
+  <!-- Main Application Logic -->
+  <script src="js/main.js?v=6"></script>
+
+  <!-- Scroll to Top Button -->
+  <a href="#top" class="scroll-to-top bg-primary-custom text-white shadow-lg" id="scrollToTopBtn">
+    <i class="bi bi-arrow-up"></i>
+  </a>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/905376395515?text=Merhaba,%20bilgi%20almak%20istiyorum." class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+</body>
+
+</html>

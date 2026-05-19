@@ -1,0 +1,14 @@
+/* Offer Form Container */
+.offer-form-wrapper {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+  .offer-form-wrapper { margin-top: 20px; padding: 20px; }
+}
