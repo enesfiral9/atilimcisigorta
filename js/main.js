@@ -88,7 +88,7 @@ $(document).ready(function () {
       event.preventDefault();
       $('html, body').stop().animate({
         scrollTop: target.offset().top - 80 // Offset for fixed navbar
-      }, 800);
+      }, 300);
       
       // Close mobile menu if open
       if ($('.navbar-collapse').hasClass('show')) {
