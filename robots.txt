@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://enesfiral9.github.io/atilimcisigorta/sitemap.xml
