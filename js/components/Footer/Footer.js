@@ -42,7 +42,7 @@ class Footer extends HTMLElement {
                 </li>
                 <li class="mb-3 d-flex">
                   <i class="bi bi-envelope me-3 mt-1 text-primary"></i>
-                  <a href="mailto:info@guvencsigorta.com.tr">aaaaaainfo@guvencsigorta.com.tr</a>
+                  <a href="mailto:info@guvencsigorta.com.tr">info@guvencsigorta.com.tr</a>
                 </li>
               </ul>
             </div>
