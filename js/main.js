@@ -116,7 +116,7 @@ $(document).ready(function () {
         welcomeModal.show();
         localStorage.setItem('hasSeenWelcomeModal', 'true');
       }
-    }, 10000); // 10 saniye
+    }, 5000); // 5 saniye
   }
 
   // Shatter Animation Logic on Close
