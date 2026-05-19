@@ -92,8 +92,6 @@ const translations = {
     faq_3_a: "Tamamlayıcı Sağlık Sigortası, SGK ile anlaşmalı özel hastanelerde göreceğiniz yatarak veya ayakta tedavi masraflarının SGK tarafından karşılanmayan fark ücretlerini sizin yerinize öder. Böylece ek bir ücret ödemeden kaliteli sağlık hizmeti alırsınız.",
     faq_4_q: "Poliçemi iptal edersem paramı iade alabilir miyim?",
     faq_4_a: "Evet, sigorta poliçenizi iptal etmeniz durumunda, poliçenin kullanılmış olan gün sayısı hesaplanarak kalan günlerin prim tutarı sigorta şirketi tarafından hesabınıza iade edilir. İptal süreci sigorta türüne göre küçük farklılıklar gösterebilir.",
-    faq_5_q: "Poliçemi nasıl yenileyebilirim?",
-    faq_5_a: "Poliçenizin bitiş tarihinden önce sizi arayarak veya WhatsApp hattımız üzerinden bizimle iletişime geçebilirsiniz. Mevcut poliçenizi inceleyerek en güncel fiyatlarla yenileme teklifini hazırlayıp size iletiyoruz. Yenileme sürecinde poliçe kapsamınızı genişletme veya daraltma imkânınız da bulunmaktadır.",
 
     // Blog Badges
     badge_arac: "Araç Sigortası",
@@ -201,8 +199,6 @@ const translations = {
     faq_3_a: "Complementary Health Insurance pays the difference fees not covered by SSI for inpatient or outpatient treatment expenses in private hospitals contracted with SSI. Thus, you receive quality health service without paying additional fees.",
     faq_4_q: "Can I get a refund if I cancel my policy?",
     faq_4_a: "Yes, if you cancel your insurance policy, the premium amount for the remaining days is refunded to your account by the insurance company by calculating the number of days the policy has been used. The cancellation process may vary slightly depending on the insurance type.",
-    faq_5_q: "How can I renew my policy?",
-    faq_5_a: "You can contact us before your policy's expiry date by calling us or via our WhatsApp line. We review your current policy and prepare a renewal offer at the latest prices. During the renewal process, you also have the option to expand or reduce your policy coverage.",
 
     // Blog Badges
     badge_arac: "Car Insurance",
