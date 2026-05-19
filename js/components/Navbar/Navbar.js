@@ -43,6 +43,29 @@ class Navbar extends HTMLElement {
         </div>
       </nav>
     `;
+
+    // Mobil menü açıkken dışarı tıklandığında menüyü kapat
+    document.addEventListener('click', (event) => {
+      const navbar = this.querySelector('.navbar');
+      const navbarCollapse = this.querySelector('.navbar-collapse');
+      const navbarToggler = this.querySelector('.navbar-toggler');
+      
+      if (navbarCollapse && navbarCollapse.classList.contains('show') && !navbar.contains(event.target)) {
+        navbarToggler.click();
+      }
+    });
+
+    // Menüdeki linklere tıklandığında menüyü kapat (daha iyi UX için)
+    const navLinks = this.querySelectorAll('.nav-link, .btn-cta');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        const navbarCollapse = this.querySelector('.navbar-collapse');
+        const navbarToggler = this.querySelector('.navbar-toggler');
+        if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+          navbarToggler.click();
+        }
+      });
+    });
   }
 }
 
